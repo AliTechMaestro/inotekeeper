@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+body{
+    min-height: 30vh;
+}
+/* Header.js Design */
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+.header h1{
+    margin-left: 20px;
+}
+/* Footer.js design */
+.footer{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0px;
+    background-color:#FDB716;
+}
+
+/* CreateNote.js Design */
+.outerdiv{
+    display: flex;
+    justify-content: center;
+}
+.outerdiv .width{
+    width: 450px;
+    box-shadow: unset;
+    margin-top: 20px;
+}
+.innerPart{
+    box-shadow: 0px 0px 15px 8px #e3e2e3;
+    padding: 12px 25px;
+}
+.innerPart form input{
+    border: none;
+    outline: none;
+}
+.innerPart textarea{
+    border: none;
+    outline: none;
+    padding: 20px 0px;
+}
+.width .add{
+    display: flex;
+    justify-content: right;
+    margin-top: -23px;
+}
+.add button{
+    border: unset;
+    color: #FDB716;
+    font-size: 25px;
+    border-radius: 50%;
+    padding: 2px 10px;
+    background-color: #eff4f7;
+}
+
+textarea::-webkit-input-placeholder{
+   font-style: italic;
+}
+textarea{
+    width: 100%;
+}
+/* Note.js Design */
+.note{
+    width: 30%;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 2px #eae9ea;
+    margin-top: 30px;
+    max-height: 30vh;
+    margin-right: 30px;
+    overflow-y: auto;
+}
+.delete {
+    display: flex;
+    justify-content: flex-end;
+}
+.note button{
+    color: #FDB716;
+    border: none;
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 0px 10px;
+    background-color: #eff4f7;
+}
+.flexbox{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+/* ScrollBar Styling */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(91, 92, 91); 
+    border-radius: 10px;
+  
+  }  
+  ::-webkit-scrollbar-thumb {
+    background: #FFBA00;
+    border-radius: 8px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(51, 49, 49, 0.9);     
+  }
+  
+
+@media (max-width:992px){
+  .flexbox{
+      justify-content: space-between!important;
+  }  
+  .note{
+    width: 40%;
+  }
+
+}
+@media (max-width:768px){
+  .flexbox{
+      justify-content: center!important;
+  }  
+  .note{
+    width: 90%;
+  }
+
+}
